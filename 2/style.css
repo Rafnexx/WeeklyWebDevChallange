@@ -44,6 +44,14 @@ body {
   background-color: #ff4033;
 }
 
+.section-heading {
+    margin: 0 0 10px 0;
+    font-size: 9rem;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: #fff;
+}
+
 /* -------- HEADER -------- */
 
 header {
@@ -153,17 +161,61 @@ section#about {
 .about-text-wrapper {
   padding: 16rem 0 22rem 0;
 }
-.about-heading {
-  margin: 0 0 10px 0;
-  font-size: 9rem;
-  font-family: 'Raleway';
-  font-weight: bold;
-  color: #fff;
-}
 .about-text {
   font-size: 1.7rem;
   font-family: 'Raleway';
   font-weight: 300;
   line-height: 2.7rem;
   color: #fff;
+}
+
+/* SERVICES SECTION */
+section#services {
+  background-color: #70bfff;
+}
+
+.cards-wrapper {
+  padding: 18rem 0 15rem 0;
+}
+.card-row {
+  margin-bottom: 2rem;
+}
+.card-row:last-of-type {
+  margin-bottom: 0;
+}
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  max-height: 100px;
+  overflow: hidden;
+}
+.card-wrapper_text {
+  flex-basis: calc(100% - 100px);
+  padding: 3rem 2rem;
+  border-right: 1px solid #9d9d9d;
+}
+.card-wrapper_text--content {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-family: 'Raleway';
+  font-weight: 700;
+  color: #262626;
+  text-align: center;
+}
+.card-wrapper_img {
+  margin: 0 auto;
+}
+
+.services-image-wrapper {
+  position: relative;
+  padding: 10rem 0 16rem 0;
+  text-align: right;
+}
+.services-heading {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 0;
+  transform: translateY(-80%);
 }
