@@ -1,0 +1,143 @@
+/* font-family: 'Pacifico', cursive;
+font-family: 'Raleway', sans-serif; */
+
+/* -------- RESET & BASIC STUFF -------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  font-family: Raleway, sans-serif;
+}
+
+/* -------- REUSABLE (like buttons etc.) -------- */
+
+.read-more-button {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff6033;
+  font-size: 2rem;
+  line-height: 56px;
+  font-weight: 300;
+  transition: 0.25s ease-in-out;
+}
+
+.read-more-button:hover {
+  text-decoration: none;
+  color: #eee;
+  background-color: #ff4033;
+}
+
+/* -------- HEADER -------- */
+
+header {
+  background-image: url(images/header_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+nav.navbar {
+  padding: 5rem 0;
+}
+
+nav.navbar ul.navbar-nav li.nav-item {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 3rem;
+}
+
+nav.navbar ul.navbar-nav li.nav-item:last-of-type {
+  margin-right: 0;
+}
+
+nav.navbar ul.navbar-nav li.nav-item a{
+  color: #262626;
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  transition: all 0.35s ease-in-out;
+}
+
+nav.navbar ul.navbar-nav li.nav-item a.active{
+  border-color: #ff6033;
+}
+
+nav.navbar ul.navbar-nav li.nav-item a:hover{
+  border-color: #ff6033;
+}
+
+.header-text {
+  padding-top: 36rem;
+}
+
+.header-text h2.header-heading {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #262626;
+}
+
+.header-text p.header-paragraph {
+  padding: 8px 0 20px 0;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #262626;
+  line-height: 2.7rem;
+}
+
+.scroll-image {
+  position: absolute;
+  top: 90vh;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: scrollImageAnimation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollImageAnimation {
+  0% {
+    top: 90vh;
+    transform: scale(1);
+  }
+
+  25% {
+    top: calc(90vh - 5px);
+    transform: scale(1.025);
+  }
+
+  50% {
+    top: calc(90vh - 10px);
+    transform: scale(1.025);
+  }
+
+  75% {
+    top: calc(90vh - 5px);
+    transform: scale(1.025);
+  }
+
+  100% {
+    top: 90vh;
+    transform: scale(1);
+  }
+}
+
+/* ABOUT US SECTION */
+.about-image {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
