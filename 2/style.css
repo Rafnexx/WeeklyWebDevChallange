@@ -1,6 +1,11 @@
 /* font-family: 'Pacifico', cursive;
 font-family: 'Raleway', sans-serif; */
 
+/* -------- CHANGE BOOTSTRAP GRID -------- */
+.container {
+  max-width: 1200px;
+}
+
 /* -------- RESET & BASIC STUFF -------- */
 
 * {
@@ -136,8 +141,29 @@ nav.navbar ul.navbar-nav li.nav-item a:hover{
 }
 
 /* ABOUT US SECTION */
+section#about {
+  background-color: #00b2b2;
+}
+.image-wrapper {
+  padding: 3.5rem 0 2.5rem 0;
+}
 .about-image {
-  position: absolute;
-  left: 0;
-  width: 100%;
+  max-width: 100%;
+}
+.about-text-wrapper {
+  padding: 16rem 0 22rem 0;
+}
+.about-heading {
+  margin: 0 0 10px 0;
+  font-size: 9rem;
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: #fff;
+}
+.about-text {
+  font-size: 1.7rem;
+  font-family: 'Raleway';
+  font-weight: 300;
+  line-height: 2.7rem;
+  color: #fff;
 }

@@ -9,11 +9,11 @@ $(document).ready(function() {
     navbar.removeClass('bg-light');
     if( scrollPosition > 0 ) {
       navbar.addClass('bg-light');
-      console.log('toggled');
     }
     else {
       navbar.removeClass('bg-light');
-      console.log('removed');
     }
-  })
+  });
+
+  
 });
